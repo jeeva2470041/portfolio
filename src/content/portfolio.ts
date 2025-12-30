@@ -75,7 +75,7 @@ export const projects = [
     description:
       "A Java-based system to manage hostel operations like student records, room allocation, and complaints. Features include automated room assignment, complaint tracking, and administrative dashboard.",
     techStack: ["Java"],
-    github: "#", // Update with actual link
+    github: "https://github.com/jeeva2470041/sharingplatform",
     live: null,
     image: "/projects/hostel.svg", // Add project images to public/projects (svg placeholder added)
   },
@@ -85,7 +85,7 @@ export const projects = [
     description:
       "A Python-based system to record and manage student attendance efficiently. Includes features like automatic reporting, attendance analytics, and export functionality.",
     techStack: ["Python"],
-    github: "#", // Update with actual link
+    github: "https://github.com/jeeva2470041/attendence",
     live: null,
     image: "/projects/attendance.svg",
   },
@@ -95,8 +95,8 @@ export const projects = [
     description:
       "A web platform that connects restaurant surplus food to NGOs and orphanage centers to reduce food waste. Features real-time notifications, location-based matching, and impact tracking.",
     techStack: ["React.jsx", "Node.js", "Mongodb"],
-    github: "#", // Update with actual link
-    live: "#", // Update with actual link
+    github: "https://github.com/jeeva2470041/ecofeed",
+    live: null,
     image: "/projects/ecofeed.svg",
   },
   {
@@ -105,7 +105,7 @@ export const projects = [
     description:
       "Image recommendation system for news articles using dual approaches: CLIP + FAISS for retrieval of relevant images from dataset, and Stable Diffusion XL for generating synthetic editorial-style images. Successfully processed 8,500+ articles with 460×260 PNG outputs meeting MediaEval submission guidelines.",
     techStack: ["Python", "PyTorch", "CLIP", "FAISS", "Stable Diffusion XL", "Pandas"],
-    github: "#", // Update with actual link
+    github: "https://github.com/jeeva2470041/MediaEval",
     live: null,
     image: "/projects/mediaeval.svg",
   },

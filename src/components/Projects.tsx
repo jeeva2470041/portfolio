@@ -23,7 +23,11 @@ export default function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              onClick={() => window.open(project.github, "_blank")}
+              onClick={() => {
+                if (project.github && project.github !== "#") {
+                  window.open(project.github, "_blank", "noopener,noreferrer");
+                }
+              }}
               className="group bg-card-bg border border-card-border rounded-xl overflow-hidden card-hover cursor-pointer"
             >
               {/* Project Image */}
