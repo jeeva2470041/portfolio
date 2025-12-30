@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jeevag.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://jeevag.vercel.app"),
   title: "Jeeva G | Portfolio",
   description:
     "Personal portfolio of Jeeva G - Computer Science Student & Aspiring Full Stack Developer at SSN College of Engineering, Chennai",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jeevag.vercel.app",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "https://jeevag.vercel.app",
     siteName: "Jeeva G Portfolio",
     title: "Jeeva G | Full Stack Developer",
     description:

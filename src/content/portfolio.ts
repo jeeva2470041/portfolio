@@ -5,20 +5,16 @@ export const profile = {
   role: "Computer Science Student | Aspiring Full Stack Developer",
   college: "SSN College of Engineering",
   location: "Chennai, India",
-  email: "priyagovinth2019@gmail.com",
+  email: process.env.NEXT_PUBLIC_EMAIL || "priyagovinth2019@gmail.com",
   github: "https://github.com/jeeva2470041",
   linkedin: "https://linkedin.com/in/jeevag",
-  formspreeId: "xjgvdopr", // Your Formspree ID
+  formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID || "xjgvdopr", // Your Formspree ID
   // resume: "/resume.pdf", // Uncomment and add your resume to public folder when ready
 };
 
 export const aboutMe = {
   title: "About Me",
-  description: `I'm a passionate Computer Science student at SSN College of Engineering, Chennai. 
-  I love building web applications and solving real-world problems through code. 
-  As an aspiring Full Stack Developer, I'm constantly learning new technologies and 
-  working on projects that make a difference. My goal is to create impactful software 
-  solutions while continuously growing as a developer.`,
+  description: `I am a Computer Science student at SSN College of Engineering, Chennai, with a strong interest in building scalable web applications and solving real-world problems through technology. As an aspiring Full Stack Developer, I enjoy learning new tools and frameworks and applying them to practical projects. I am driven by the goal of creating meaningful, user-focused software solutions while continuously improving my technical and problem-solving skills`,
   highlights: [
     "Passionate about Full Stack Development",
     "Love solving real-world problems through code",

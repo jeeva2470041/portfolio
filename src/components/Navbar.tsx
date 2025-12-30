@@ -27,10 +27,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="#home"
-            className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+            className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-card-bg border border-card-border hover:border-primary transition-all duration-500 overflow-hidden"
           >
-            {profile.name.split(" ")[0]}
-            <span className="text-foreground">.</span>
+            <span className="text-2xl font-bold gradient-text group-hover:scale-110 transition-transform duration-500 relative z-10">
+              J
+            </span>
+            <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute -inset-full bg-gradient-to-r from-transparent via-primary/20 to-transparent group-hover:animate-[shimmer_2s_infinite] rotate-45"></div>
           </Link>
 
           {/* Desktop Navigation */}

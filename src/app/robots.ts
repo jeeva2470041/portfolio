@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://jeevag.vercel.app"; // Update with your actual domain
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://jeevag.vercel.app"; // Update with your actual domain
 
   return {
     rules: {
