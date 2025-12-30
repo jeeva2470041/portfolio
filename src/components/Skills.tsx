@@ -1,4 +1,5 @@
 import { skills } from "@/content/portfolio";
+import SkillPill from "@/components/SkillPill";
 
 interface SkillCategory {
   name: string;
@@ -40,9 +41,11 @@ function SkillCard({
         <h3 className="text-xl font-bold text-foreground">{title}</h3>
       </div>
       <div>
-        {skillList.map((skill) => (
-          <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-        ))}
+        <div className="flex flex-wrap gap-6 justify-center">
+          {skillList.map((skill) => (
+            <SkillPill key={skill.name} name={skill.name} />
+          ))}
+        </div>
       </div>
     </div>
   );
