@@ -1,4 +1,3 @@
-// Portfolio content - Single source of truth for all data
 
 export const profile = {
   name: "Jeeva G",
@@ -8,8 +7,8 @@ export const profile = {
   email: process.env.NEXT_PUBLIC_EMAIL || "priyagovinth2019@gmail.com",
   github: "https://github.com/jeeva2470041",
   linkedin: "https://linkedin.com/in/jeevag",
-  formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID || "xjgvdopr", // Your Formspree ID
-  // resume: "/resume.pdf", // Uncomment and add your resume to public folder when ready
+  formspreeId: process.env.NEXT_PUBLIC_FORMSPREE_ID || "xjgvdopr", 
+ 
 };
 
 export const aboutMe = {
@@ -32,7 +31,7 @@ export const education = [
     period: "2024 - 2029",
     description:
       "Pursuing bachelor's degree with focus on software development, data structures, and web technologies.",
-    gpa: "8.01", // Update with your actual GPA
+    gpa: "8.01", 
   },
   {
     id: 2,
@@ -77,7 +76,7 @@ export const projects = [
     techStack: ["Java"],
     github: "https://github.com/jeeva2470041/sharingplatform",
     live: null,
-    image: "/projects/hostel.svg", // Add project images to public/projects (svg placeholder added)
+    image: "/projects/hostel.svg", 
   },
   {
     id: 2,
