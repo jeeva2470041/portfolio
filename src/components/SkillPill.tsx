@@ -91,10 +91,60 @@ const skillIcons: Record<string, ReactNode> = {
       </g>
     </svg>
   ),
+  SQL: (
+    <svg viewBox="0 0 128 128" className="w-8 h-8">
+      <path fill="#00618A" d="M116 64c0 26.51-23.49 48-52 48S12 90.51 12 64s23.49-48 52-48 52 21.49 52 48z"/>
+      <path fill="#fff" d="M64 22c-22.09 0-40 9.85-40 22s17.91 22 40 22 40-9.85 40-22S86.09 22 64 22zm0 38c-19.33 0-34-7.61-34-16s14.67-16 34-16 34 7.61 34 16-14.67 16-34 16z"/>
+      <ellipse fill="#fff" cx="64" cy="44" rx="34" ry="8"/>
+      <path fill="#fff" d="M30 54v10c0 8.39 14.67 16 34 16s34-7.61 34-16V54c-7.44 5.28-20.27 8-34 8s-26.56-2.72-34-8zm0 20v10c0 8.39 14.67 16 34 16s34-7.61 34-16V74c-7.44 5.28-20.27 8-34 8s-26.56-2.72-34-8z"/>
+    </svg>
+  ),
+  MongoDB: (
+    <svg viewBox="0 0 128 128" className="w-8 h-8">
+      <path fill="#439934" d="M88.038 42.04c-5.677-25.08-19.06-33.338-20.714-36.987-.823-1.848-1.653-4.624-2.469-7.053C64.376 6.625 64 12.968 64 12.968c-11.37 4.66-17.024 14.978-18.364 19.54-4.384 1.576-8.488 4.084-11.9 7.555-9.808 9.97-12.44 24.577-10.077 37.34 2.46 13.258 11.473 25.1 24.095 31.08 4.23 2.009 9.08 3.11 13.38 4.803v.012c.42 1.674.667 3.383.753 5.055l.112 3.17c-.084.028-.168.057-.252.084v3.393h16.506v-3.393c-.084-.028-.168-.057-.252-.084l.112-3.17c.086-1.672.333-3.381.753-5.055v-.012c4.3-1.693 9.15-2.794 13.38-4.803 12.622-5.98 21.635-17.822 24.095-31.08 2.363-12.763-.27-27.37-10.077-37.34a40.12 40.12 0 00-11.9-7.555c-1.34-4.562-6.994-14.88-18.364-19.54zM64 111.546s0-39.79.643-39.786c5.004 0 10.13 63.997 10.13 63.997L64 111.546z"/>
+      <path fill="#C1D72F" d="M64 71.76s.643 39.786.643 39.786L74.773 135.757c0 0-5.127-63.997-10.13-63.997-.643-.004-.643 0-.643 0z"/>
+    </svg>
+  ),
+  Neo4j: (
+    <svg viewBox="0 0 128 128" className="w-8 h-8">
+      <circle cx="64" cy="64" r="60" fill="#008CC1"/>
+      <circle cx="64" cy="30" r="14" fill="#fff"/>
+      <circle cx="30" cy="90" r="14" fill="#fff"/>
+      <circle cx="98" cy="90" r="14" fill="#fff"/>
+      <line x1="64" y1="44" x2="30" y2="76" stroke="#fff" strokeWidth="5"/>
+      <line x1="64" y1="44" x2="98" y2="76" stroke="#fff" strokeWidth="5"/>
+      <line x1="30" y1="90" x2="98" y2="90" stroke="#fff" strokeWidth="5"/>
+    </svg>
+  ),
+  GitLab: (
+    <svg viewBox="0 0 128 128" className="w-8 h-8">
+      <path fill="#E24329" d="M126 70.5L113.7 30.8a3.3 3.3 0 00-6.3.5L99.1 56H28.9L20.6 31.3a3.3 3.3 0 00-6.3-.5L2 70.5a9.3 9.3 0 003.4 10.4l58.6 42.6 58.6-42.6A9.3 9.3 0 00126 70.5z"/>
+      <path fill="#FC6D26" d="M64 123.5L99.1 56H28.9L64 123.5z"/>
+      <path fill="#FCA326" d="M64 123.5l-35.1-67.5L14 70.5a9.3 9.3 0 003.4 10.4L64 123.5z"/>
+      <path fill="#E24329" d="M64 123.5l35.1-67.5 14.2 14.5a9.3 9.3 0 01-3.4 10.4L64 123.5z"/>
+    </svg>
+  ),
+  NetBeans: (
+    <svg viewBox="0 0 128 128" className="w-8 h-8">
+      <rect width="128" height="128" rx="18" fill="#1B6AC6"/>
+      <path fill="#fff" d="M28 36h72v8H28zM28 60h72v8H28zM28 84h72v8H28z"/>
+      <path fill="#FFD700" d="M20 28h8v72h-8zM100 28h8v72h-8z"/>
+    </svg>
+  ),
 };
 
-export default function SkillPill({ name }: { name: string }) {
+export default function SkillPill({ name, iconOnly = false }: { name: string; iconOnly?: boolean }) {
   const icon = skillIcons[name];
+
+  if (iconOnly) {
+    return (
+      <div className="w-10 h-10 rounded-lg bg-card-bg border border-card-border flex items-center justify-center transition-all duration-300 group-hover:border-primary group-hover:shadow-[0_0_12px_rgba(45,212,191,0.25)] shrink-0">
+        {icon || (
+          <span className="text-sm font-bold text-primary">{name.charAt(0)}</span>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col items-center gap-3 group">
@@ -111,3 +161,4 @@ export default function SkillPill({ name }: { name: string }) {
     </div>
   );
 }
+
