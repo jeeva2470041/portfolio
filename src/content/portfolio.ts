@@ -79,6 +79,44 @@ export const projects = [
 
   {
     id: 1,
+    title: "PayTrace",
+    tagline: "Automated UPI expense tracker — zero manual entry, full spending clarity.",
+    description:
+      "Manually tracking UPI expenses across Google Pay, PhonePe, and Paytm is tedious and error-prone. PayTrace automatically parses SMS and push notifications from 5+ payment apps, categorizes transactions using ML, and presents interactive spending visualizations — reducing expense-tracking effort by approximately 80%.",
+    features: [
+      "Automatic SMS & notification parsing from 5+ UPI apps",
+      "ML-based transaction categorization with 92%+ accuracy",
+      "Interactive spending visualizations & analytics",
+      "Multi-app support — Google Pay, PhonePe, Paytm & more",
+      "Zero manual data entry required",
+    ],
+    achievement: "🏆 Winner — St. Joseph College Hackathon (Best project among 50+ teams)",
+    techStack: ["Flutter", "Dart", "Python", "ML", "Kotlin"],
+    github: "https://github.com/jeeva2470041/paytrace",
+    live: null,
+    image: "/projects/paytrace.svg",
+  },
+  {
+    id: 2,
+    title: "Campus Share",
+    tagline: "Peer-to-peer campus sharing — connecting students to share resources seamlessly.",
+    description:
+      "College students constantly need textbooks, lab equipment, and notes that seniors have but rarely reuse. Campus Share is a campus-exclusive peer-to-peer platform that enables students to share, lend, and exchange resources within their college community — promoting sustainability and collaboration.",
+    features: [
+      "Peer-to-peer resource sharing within campus",
+      "Category-based item listings (books, notes, equipment)",
+      "In-app messaging for coordination",
+      "College-verified user profiles",
+      "Sustainable resource reuse across batches",
+    ],
+    achievement: "Built for Google TechSprint & IIT Kharagpur Hackathon",
+    techStack: ["Flutter", "Dart", "Firebase", "Cloud Firestore"],
+    github: "https://github.com/jeeva2470041/campusshare",
+    live: null,
+    image: "/projects/campusshare.svg",
+  },
+  {
+    id: 3,
     title: "Agri-Tech",
     tagline: "AI-powered farming assistant designed for India's rural heartland.",
     description:
@@ -97,7 +135,7 @@ export const projects = [
     image: "/projects/agritech.svg",
   },
   {
-    id: 2,
+    id: 4,
     title: "Smart Placement Prep",
     tagline: "Daily interview questions, zero repeated content — stay sharp, stay ready.",
     description:
@@ -111,12 +149,12 @@ export const projects = [
     ],
     achievement: "Eliminates repetitive prep — always fresh, always relevant",
     techStack: ["Python", "BeautifulSoup", "React.js", "Node.js", "MongoDB"],
-    github: "https://github.com/jeeva2470041/smartprep",
+    github: "https://github.com/jeeva2470041/placz",
     live: null,
     image: "/projects/smartprep.svg",
   },
   {
-    id: 3,
+    id: 5,
     title: "EcoFeed",
     tagline: "Connecting surplus food to those who need it most.",
     description:
@@ -134,7 +172,7 @@ export const projects = [
     image: "/projects/ecofeed.svg",
   },
   {
-    id: 4,
+    id: 6,
     title: "MediaEval 2025 — NewsImages",
     tagline: "AI-driven image recommendation for 8,500+ news articles.",
     description:
@@ -152,7 +190,7 @@ export const projects = [
     image: "/projects/mediaeval.svg",
   },
   {
-    id: 5,
+    id: 7,
     title: "Smart Hostel Management",
     tagline: "Digitizing hostel operations — from room allocation to complaint tracking.",
     description:
@@ -170,7 +208,7 @@ export const projects = [
     image: "/projects/hostel.svg",
   },
   {
-    id: 6,
+    id: 8,
     title: "Attendance Management System",
     tagline: "Automated attendance tracking with smart analytics and reporting.",
     description:

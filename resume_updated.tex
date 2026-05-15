@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=0.4in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+
+% Hyperlink styling — ATS-safe, no colored boxes
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=black}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom commands
+\newcommand{\name}[1]{{\fontsize{20pt}{20pt}\selectfont\textbf{#1}}}
+\newcommand{\sectionhead}[1]{{\fontsize{12pt}{14pt}\selectfont\textbf{#1}}\vspace{2pt}\hrule\vspace{3pt}}
+
+% Tight spacing for one-page format
+\setlist[itemize]{itemsep=0pt, topsep=1pt, leftmargin=16pt}
+\parskip=1pt
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+    \name{Jeeva G}
+    \vspace{2pt}
+
+    {\fontsize{10.5pt}{10.5pt}\selectfont Full-Stack Developer}
+
+    \vspace{2pt}
+
+    \href{mailto:priyagovinth2019@gmail.com}{priyagovinth2019@gmail.com} \quad
+    +91 6369235064 \quad
+    \href{https://linkedin.com/in/jeevain/}{linkedin.com/in/jeevain} \quad
+    \href{https://github.com/jeeva2470041}{github.com/jeeva2470041}
+\end{center}
+
+\vspace{3pt}
+
+% ==================== 1. OBJECTIVE ====================
+\sectionhead{Objective}
+
+Second-year M.Tech (Integrated) Computer Science student at SSN College of Engineering (CGPA: 8.01) with a strong focus on solving real-world problems through practical, scalable solutions. Adaptable and quick to learn new technologies, with proven ability to perform in fast-paced, deadline-driven environments. Currently advancing skills in machine learning and system design while seeking internship opportunities to contribute effectively from the outset.
+
+\vspace{4pt}
+
+% ==================== 2. EDUCATION ====================
+\sectionhead{Education}
+
+\textbf{M.Tech(Integrated) -- Computer Science and Engineering} \hfill
+
+SSN College of Engineering, Chennai -- CGPA: 8.01 (2024--2029) (Pursuing)
+
+\textbf{HSC -- 12th Grade} \hfill
+
+Adithya Vivekananda Hr. Sec School, Villupuram -- 94.87\% (2023--2024)
+
+\vspace{4pt}
+
+% ==================== 3. SKILLS ====================
+\sectionhead{Skills}
+
+\begin{tabular}{ l l }
+\textbf{Languages:} & Java, Python, C, JavaScript, SQL, Dart \\
+\textbf{Frontend:} & React.js, HTML, CSS, Flutter \\
+\textbf{Backend:} & Node.js, Firebase \\
+\textbf{Databases:} & MongoDB, MySQL, Neo4j \\
+\textbf{AI / ML:} & TensorFlow, CLIP, FAISS \\
+\textbf{Tools:} & Git, GitHub, GitLab \\
+\end{tabular}
+
+\vspace{4pt}
+
+% ==================== 4. PROJECTS ====================
+\sectionhead{Projects}
+
+\textbf{PayTrace - Payment Tracker}
+\begin{itemize}
+    \item Developed an automated UPI expense tracker that parses SMS and push notifications from 5+ payment apps (Google Pay, PhonePe, Paytm) to eliminate manual data entry.
+    \item Implemented ML-based transaction categorization achieving 92\%+ accuracy, with interactive spending visualizations that reduced user expense-tracking effort by approximately 80\%.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{NewsImages Retrieval and Generation}
+\begin{itemize}
+    \item Built a dual-pipeline image recommendation system processing 8,500+ news articles using CLIP embeddings and FAISS vector search for sub-second semantic retrieval.
+    \item Engineered a fallback pipeline using Stable Diffusion XL to generate editorial-quality synthetic images when no relevant match exists, meeting full MediaEval 2025 submission guidelines.
+\end{itemize}
+
+\vspace{2pt}
+\textbf{EcoFeed - Food Donation Platform}
+\begin{itemize}
+    \item Architected a full-stack food waste reduction platform with location-based matching algorithm connecting surplus food donors to 50+ nearby NGOs and orphanages.
+    \item Implemented real-time WebSocket notifications and an impact tracking dashboard measuring meals redistributed and waste prevented.
+\end{itemize}
+
+\vspace{4pt}
+
+% ==================== 5. HACKATHONS & ACHIEVEMENTS ====================
+\sectionhead{Hackathons \& Achievements}
+
+\begin{itemize}
+    \item \textbf{Winner} -- St. Joseph College Hackathon (2025): Developed PayTrace, selected as best project among 50+ teams.
+    \item \textbf{Participant} -- SIH NATPAC (2025): Built a consent-based travel data collection app for NATPAC organisation.
+    \item \textbf{Participant} -- Google TechSprint (2025): Developed Campus share platform.
+\end{itemize}
+
+\vspace{4pt}
+
+% ==================== 6. CERTIFICATIONS ====================
+\sectionhead{Certifications}
+
+\textbf{NPTEL} -- Privacy and Security in Online Social Media $|$ \textbf{Google TechSprint} -- Participation Certificate
+
+\end{document}

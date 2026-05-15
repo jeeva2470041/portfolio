@@ -1,0 +1,126 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0, 102, 204}
+\definecolor{lightgray}{RGB}{240, 240, 240}
+
+% Remove page numbers and default header/footer
+\pagestyle{empty}
+
+% Custom commands
+\newcommand{\name}[1]{{\fontsize{24pt}{24pt}\selectfont\textbf{#1}}}
+\newcommand{\sectionhead}[1]{{\color{darkblue}\fontsize{12pt}{12pt}\selectfont\textbf{#1}}\vspace{4pt}\hrule\vspace{6pt}}
+\newcommand{\subsectionhead}[2]{{\textbf{#1}} \hfill {\textit{#2}}\vspace{2pt}}
+\newcommand{\subsubsectionhead}[2]{{\textbf{#1}} $|$ {\textit{#2}}\vspace{2pt}}
+
+% Reduce spacing
+\setlist[itemize]{itemsep=2pt, topsep=0pt, leftmargin=20pt}
+
+\begin{document}
+
+% ==================== HEADER ====================
+\begin{center}
+    \name{Arivuchezhiyan E}
+    \vspace{3pt}
+    
+    Chennai, India $|$ \href{mailto:arivuchezhiyan000@gmail.com}{\faEnvelope \, arivuchezhiyan000@gmail.com} $|$ \faPhone \, +91 7010818264 $|$ 
+    \href{https://linkedin.com/in/arivuchezhiyan}{\faLinkedin \, linkedin.com/in/arivuchezhiyan} $|$ 
+    \href{https://github.com/arivuchezhiyan}{\faGithub \, github.com/arivuchezhiyan}
+\end{center}
+
+\vspace{6pt}
+
+% ==================== EXECUTIVE SUMMARY ====================
+\sectionhead{EXECUTIVE SUMMARY}
+
+First-year M.Tech Integrated CSE student at SSN with hands-on experience building software across systems programming, full-stack web development, and cross-platform mobile engineering. Built and shipped projects spanning a custom OS kernel in C/x86 Assembly, a real-time MERN ride-hailing platform, and an encrypted 12-feature Windows–Android integration suite. Ranked 2nd in XII State Board examinations (571/600) and currently maintaining a 7.656 CGPA.
+
+\vspace{6pt}
+
+% ==================== EDUCATION ====================
+\sectionhead{EDUCATION}
+
+\subsectionhead{M.Tech (Int) CSE — Sri Sivasubramaniya Nadar College (SSN)}{2024 – 2029}
+CGPA: 7.656
+
+\subsectionhead{XII (State) — Paarivallal Higher Secondary School, Ariyalur}{2023}
+Marks: 571/600 (Rank 2)
+
+\subsectionhead{X (State) — Paarivallal Higher Secondary School, Ariyalur}{2021}
+
+\vspace{6pt}
+
+% ==================== PROJECTS ====================
+\sectionhead{PROJECTS}
+
+\subsectionhead{Assistant}{Python, AI, Automation \hfill 2025}
+\begin{itemize}
+    \item Built a modular AI assistant in Python integrating speech recognition, task scheduling, and OS-level automation across 5+ independently deployable plugins.
+    \item Reduced manual task execution time by approximately 60\% through natural language command routing and cross-application automation pipelines.
+\end{itemize}
+
+\subsectionhead{OpenContinuity}{Electron, TypeScript, Kotlin, AES-256-GCM \hfill 2025}
+\begin{itemize}
+    \item Designed a 12-feature Windows–Android integration suite (clipboard sync, file transfer, screen mirroring, notifications, battery monitoring) using Electron and Kotlin with sub-50ms local network latency.
+    \item Secured all inter-device communication with AES-256-GCM encryption and ECDH key exchange, and automated device discovery via mDNS, eliminating manual IP configuration.
+\end{itemize}
+
+\subsectionhead{Uber Clone}{MERN Stack, React, Socket.io, Stripe API \hfill 2025}
+\begin{itemize}
+    \item Built a full-stack MERN ride-hailing platform with real-time GPS tracking (Socket.io + Leaflet.js) and role-based dashboards for 3 user types: customers, drivers, and admins.
+    \item Integrated Stripe payment workflows supporting end-to-end transaction processing, ride history, and user rating persistence on MongoDB Atlas.
+\end{itemize}
+
+\subsectionhead{Elite OS}{C, x86 Assembly, Kernel Development \hfill 2024}
+\begin{itemize}
+    \item Developed a custom xv6-derived OS kernel in C and x86 Assembly, implementing preemptive process scheduling, virtual memory paging, and 8 custom system calls.
+    \item Achieved full usertests.c suite pass rate, validating memory allocator correctness, context-switch integrity, and system call isolation under concurrent load.
+\end{itemize}
+
+\vspace{6pt}
+
+% ==================== TECHNICAL SKILLS ====================
+\sectionhead{TECHNICAL SKILLS}
+
+\textbf{Languages:} C, C++, Python (Scripting, Automation), Java, JavaScript, Assembly (x86)
+
+\textbf{Frontend:} React.js, HTML, CSS, JavaScript
+
+\textbf{Mobile:} Flutter, Kotlin
+
+\textbf{Backend:} Node.js, Express.js, Firebase
+
+\textbf{Databases:} MongoDB, SQL
+
+\textbf{Tools \& Platforms:} Git, GitHub, Socket.io, Electron
+
+\textbf{CS Fundamentals:} Data Structures \& Algorithms, OS Internals, Systems Design
+
+\vspace{6pt}
+
+% ==================== CERTIFICATIONS & COURSES ====================
+\sectionhead{CERTIFICATIONS \& COURSES}
+
+Google — \textbf{Privacy and Security Fundamentals:} Certificate \quad $|$ \quad NPTEL — \textbf{Affective Computing} (In Progress)
+
+Embedded Development Workshop — \textbf{Hardware Systems:} Certificate
+
+\vspace{6pt}
+
+% ==================== CLUBS AND ACTIVITIES ====================
+\sectionhead{CLUBS AND ACTIVITIES}
+
+SSN Coding Club (UI/UX Domain Member) $|$ IEEE Computer Society SSN (Volunteer) \hfill 2025 – Present
+
+NSO Volunteer (Inter-college Sports Coordinator) $|$ Hackathons (Participated at SNU \& St. Joseph's)
+
+\end{document}
